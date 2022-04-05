@@ -1,0 +1,16 @@
+h1, p{
+    text-align: center;
+}
+
+ul:hover, ol:hover {
+    beckground-color: yellow;
+}
+
+li:active {
+    font-family: sans-serif, helvetica;
+    font-size: 20px;
+}
+
+li {
+    list-style: none;
+}
