@@ -1,4 +1,4 @@
-// exercícios - 01
+// exercício - 01
 
 const a = 20;
 const b = 10;
@@ -10,7 +10,7 @@ console.log("divisão: " + (a / b));
 console.log("módulo: " + (a % b));
 
 
-// exercícios - 02
+// exercício - 02
 
 const x = 5;
 const y = 15;
@@ -20,3 +20,21 @@ if (x > y) {
 } else {
     console.log("'y' é maior que 'x'");
 }
+
+
+// exercício - 03
+
+const a = 30;
+const b = 20;
+const c = 10;
+
+if (a > b && a > c) {
+  console.log('O maior número é: ' + a + ' (a)');
+} else if (b > a && b > c) {
+  console.log('O maior número é: ' + b + ' (b)');
+} else {
+  console.log('O maior número é: ' + c + ' (c)');
+}
+
+
+
