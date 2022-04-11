@@ -71,4 +71,22 @@ if (angulosTodosPositivos) {
 }
 
 
+// exercício - 06
 
+let pecaDoXadrez = 'Rei';
+
+switch (pecaDoXadrez.toLowerCase()) {
+  case 'rei': console.log('Rei -> Em qualquer direção, apenas uma casa por vez');
+    break;
+  case 'rainha': console.log('Rainha -> Em qualquer direção e quantas casas desejar, desde que estejam livres');
+    break;
+  case 'torre': console.log('Torre -> Em linha reta na vertical e na horizontal, quantas casas quiser');
+    break;
+  case 'bispo': console.log('Bispo -> Na diagonal, quantas casas quiser');
+    break;
+  case 'cavalo': console.log('Cavalo -> Movimenta-se em L, sendo uma casa na vertical e duas na horizontal ou o contrario');
+    break;
+  case 'peão': console.log('Peão -> Sempre para frente, no primeiro movimento duas casas, depois apenas uma por vez');
+    break;
+  default: console.log('Erro: peça inválida')
+}
