@@ -37,6 +37,7 @@ if (a > b && a > c) {
 }
 
 
+// exercício - 04
 
 const numero = 15;
 
@@ -48,6 +49,26 @@ if (numero > 0) {
   console.log('zero');
 }
 
+
+// exercício - 05
+
+const anguloA = 70;
+const anguloB = 50;
+const anguloC = 60;
+
+let somaDosAngulos = anguloA + anguloB + anguloC;
+
+let angulosTodosPositivos = anguloA > 0 && anguloB > 0 && anguloC > 0;
+
+if (angulosTodosPositivos) {
+  if (somaDosAngulos === 180) {
+    console.log(true); 
+  } else {
+  console.log(false);
+  };
+  } else {
+  console.log('Angulo inválido');
+}
 
 
 
