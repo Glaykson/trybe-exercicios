@@ -24,17 +24,30 @@ if (x > y) {
 
 // exercício - 03
 
-const a = 30;
+const a = 5;
 const b = 20;
 const c = 10;
 
 if (a > b && a > c) {
-  console.log('O maior número é: ' + a + ' (a)');
+  console.log('O maior número é: ' + a);
 } else if (b > a && b > c) {
-  console.log('O maior número é: ' + b + ' (b)');
+  console.log('O maior número é: ' + b);
 } else {
-  console.log('O maior número é: ' + c + ' (c)');
+  console.log('O maior número é: ' + c);
 }
+
+
+
+const numero = 15;
+
+if (numero > 0) {
+  console.log('positive');
+} else if (numero < 0) {
+  console.log('negative');
+} else {
+  console.log('zero');
+}
+
 
 
 
