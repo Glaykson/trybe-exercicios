@@ -129,3 +129,37 @@ console.log(par);
 
 
 
+// exercício - 09
+
+
+const a = 4;
+const b = 10;
+const c = 20;
+
+let impar = false;
+
+if ((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
+  impar = true;
+};
+console.log(impar);
+
+
+// exercício - 10
+
+
+const custoDoProduto = 5;
+const valorDeVenda = 7.5;
+
+if (custoDoProduto >= 0 && valorDeVenda >= 0) {
+  const custoTotalDoProduto = custoDoProduto * 1.2;
+  const lucro = (valorDeVenda - custoTotalDoProduto) * 1000;
+  console.log(lucro);
+} else {
+  console.log("Erro: os valores não podem ser negativos");
+}
+
+
+
+
+
+
