@@ -112,3 +112,20 @@ if (nota < 0 || nota > 100) {
   console.log("F");
 }
 
+
+// exercício - 08
+
+
+const a = 4;
+const b = 9;
+const c = 11;
+
+let par = false;
+
+if ((a % 2 === 0 || b % 2 === 0 || c % 2 === 0)) {
+  par = true;
+};
+console.log(par);
+
+
+
