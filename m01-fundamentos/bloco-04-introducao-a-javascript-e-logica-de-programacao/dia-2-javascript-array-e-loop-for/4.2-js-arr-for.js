@@ -9,6 +9,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 }  
 
 
+
 // Exercício 2 - Some todos os valores contidos no array e imprima o soma;  
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -18,6 +19,7 @@ for (let index = 0; index < numbers.length; index += 1) {
   soma += numbers[index];
 }
 console.log(soma);
+
 
 
 // Exercício 3 - Calcule e imprima a média aritmética dos valores contidos no array;  
@@ -32,6 +34,7 @@ for (let index = 0; index < numbers.length; index += 1) {
 
 let media = soma / numbers.length;
   console.log(media);
+
 
 
 // Exercício 4 - Com o mesmo código do exercício anterior, caso o valor final seja maior que 20, imprima a mensagem: "valor maior que 20". Caso não seja, imprima a mensagem: "valor menor ou igual a 20";  
@@ -66,6 +69,7 @@ for (let index = 1; index < numbers.length; index += 1) {
 console.log(menorNum)
 
 
+
 // Exercício 6 - Descubra quantos valores ímpares existem no array e imprima o soma. Caso não exista nenhum, imprima a mensagem: "nenhum valor ímpar encontrado";  
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -84,6 +88,7 @@ if (soma === 0) {
 }
 
 
+
 // Exercício 7 - Utilizando for , descubra qual o menor valor contido no array e imprima-o; 
 
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
@@ -100,13 +105,17 @@ console.log(menorNum)
 
 // Exercício 8 - Utilizando for , crie um array que vá de 1 até 25 e imprima o soma;
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let numeros = [];
+
+for (let index = 1; index <= 25; index += 1) {
+    numeros.push(index);
+}
+
+console.log(numeros)
+
 
 
 // Exercício 9 - Utilizando o array criado no exercício anterior imprima o soma da divisão de cada um dos elementos por 2 . 
-
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-
 
 
 
