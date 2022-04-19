@@ -54,24 +54,47 @@ let info = {
 // 4 - Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. 
 
 let info = {
-    personagem: 'Margarida',
-    origem: 'Pato Donald',
-    nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
-    recorrente: 'Sim'
+    personagem: "Margarida",
+    origem: "Pato Donald",
+    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+    recorrente: "Sim",
   }
 
   for (let valores in info) {
     console.log(info[valores]);
   }
 
-  
 
 // 5 - Agora, defina um segundo objeto com a mesma estrutura (as mesmas chaves) do primeiro e os seguintes chaves: 'Tio Patinhas', 'Christmas on Bear Mountain, Dell's Four Color Comics #178', 'O último MacPatinhas', 'Sim'. Então, imprima os chaves de cada objeto juntos de acordo com cada uma das chaves. Valor esperado no console:
 
-// Margarida e Tio Patinhas
-// Pato Donald e Christmas on Bear Mountain, Dell's Four Color Comics #178
-// Namorada do personagem principal nos quadrinhos do Pato Donald e O último MacPatinhas
-// Ambos recorrentes // Atenção para essa última linha!
+
+let info = {
+    personagem: "Margarida",
+    origem: "Pato Donald",
+    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+    recorrente: "Sim",
+  };
+  
+  let info2 = {
+    personagem: "Tio Patinhas",
+    origem: "Christmas on Bear Mountain, Dell’s Four Color Comics #178",
+    nota: "O último MacPatinhas",
+    recorrente: "Sim",
+  };
+  
+  for (let propriedades in info) {
+    if (
+      propriedades === "recorrente" &&
+      info[propriedades] === "Sim" &&
+      info2[propriedades] === "Sim"
+    ) {
+      console.log("Ambos recorrentes");
+    } else {
+      console.log(info[propriedades] + " e " + info2[propriedades]);
+    }
+  }
+
+
 
 // Usando o objeto abaixo, faça os exercícios a seguir:
 
