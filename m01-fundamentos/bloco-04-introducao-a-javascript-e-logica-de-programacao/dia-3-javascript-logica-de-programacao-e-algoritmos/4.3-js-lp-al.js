@@ -16,8 +16,13 @@ for (index = 10; index > 0; index -= 1) {
 
 // 2- Agora, desenvolva um algoritmo que é capaz de inverter uma palavra. Por exemplo, a palavra "banana" seria invertida para "ananab". Utilize a string abaixo como exemplo, depois troque por outras para verificar se seu algoritmo está funcionando corretamente.
 
-let word = 'tryber';
+let word = 'glaykson';
+let inverter = "";
 
+for (let index = 0; index < word.length; index += 1)
+   inverter += word[word.length - 1 - index];
+
+console.log(inverter);
 
 
 // 3- Considere o array de strings abaixo:
