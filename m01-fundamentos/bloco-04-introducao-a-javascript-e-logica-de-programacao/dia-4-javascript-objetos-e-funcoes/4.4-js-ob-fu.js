@@ -39,11 +39,6 @@ console.log(info);
 
 // 3 - Faça um for/in que mostre todas as chaves do objeto.
 
-
-
-
-// 4 - Faça um novo for/in , mas agora mostre todos os chaves das chaves do objeto. Valor esperado no console:
-
 let info = {
     personagem: 'Margarida',
     origem: 'Pato Donald',
@@ -51,12 +46,12 @@ let info = {
     recorrente: 'Sim'
   }
 
+  for (let chaves in info) {
+      console.log(chaves);
+  }
 
 
-// Margarida
-// Pato Donald
-// Namorada do personagem principal nos quadrinhos do Pato Donald
-// Sim
+// 4 - Faça um novo for/in , mas agora mostre todos os valores das chaves do objeto. 
 
 
 
