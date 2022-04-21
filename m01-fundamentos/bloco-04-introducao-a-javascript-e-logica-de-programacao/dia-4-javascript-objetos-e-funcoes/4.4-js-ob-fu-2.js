@@ -5,13 +5,6 @@
 
 // 1 - Crie uma função que receba uma string e retorne true se for um palíndromo, ou false, se não for.
 
-function palindromo = 'ovo'
-
-for (index = 0; index < ovo.length; index += 1) {
-  if (ovo[index])
-}
-
-
 function palindromeOuNao(ovo){
     for(index in ovo) {
       if(ovo[index] != ovo[(ovo.length - 1) - index]){
@@ -24,15 +17,20 @@ function palindromeOuNao(ovo){
   console.log(palindromeOuNao('ovo'));
 
 
-
-
-
-
-
 // 2 - Crie uma função que receba um array de inteiros e retorne o índice do maior valor. 
 
-
-
+function maiorDoIndice(array) {
+    let indiceMaior = 0;
+    for (let indice in array) {
+      
+      if (array[indiceMaior] < array[indice]) {
+        indiceMaior = indice;
+      }
+    }
+    return indiceMaior;
+}
+  
+    console.log(maiorDoIndice([2, 3, 6, 7, 10, 1]));
 
 
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor. 
