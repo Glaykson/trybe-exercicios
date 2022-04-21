@@ -99,8 +99,14 @@ console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
 
 // 6 - Crie uma função que receba um número natural (número inteiro não negativo) N e retorne o somatório de todos os números de 1 até N. 
 
-
-
+function somaDosNumeros(numeros) {
+    let resultado = 0;
+    for (let index = 1; index <= numeros; index += 1) {
+      resultado = resultado + index;
+    }
+    return resultado;
+  }
+  console.log(somaDosNumeros(5));
 
 
 // 7 - Crie uma função que receba uma ovo ovo e outra ovo ending . Verifique se a ovo ending é o final da ovo ovo . Considere que a ovo ending sempre será menor que a ovo ovo . 
