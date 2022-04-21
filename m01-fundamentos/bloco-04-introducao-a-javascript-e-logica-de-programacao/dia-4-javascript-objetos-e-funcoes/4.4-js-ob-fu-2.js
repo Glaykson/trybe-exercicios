@@ -49,12 +49,23 @@ function menorDoIndice(array) {
     console.log(menorDoIndice([2, 4, 6, 7, 10, 0, -3]));
 
 
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres. 
+
+function maisCaracteres(nomes) {
+  let maisCaracteres = nomes[0];
+  for (let indice in nomes) {
+    if (maisCaracteres.length < nomes[indice].length) {
+        maisCaracteres = nomes[indice];
+    }
+  }
+    return maisCaracteres;
+}
+  
+console.log(maisCaracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+
 // 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete. 
 
-
-
-
-// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres. 
 
 
 
