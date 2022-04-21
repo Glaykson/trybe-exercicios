@@ -35,10 +35,26 @@ function maiorDoIndice(array) {
 
 // 3 - Crie uma função que receba um array de inteiros e retorne o índice do menor valor. 
 
+function menorDoIndice(array) {
+    let indiceMenor = 0;
+    for (let indice in array) {
+      
+      if (array[indiceMenor] > array[indice]) {
+        indiceMenor = indice;
+      }
+    }
+    return indiceMenor;
+}
+  
+    console.log(menorDoIndice([2, 4, 6, 7, 10, 0, -3]));
 
 
 // 5 - Crie uma função que receba um array de inteiros e retorne o inteiro que mais se repete. 
 
+
+
+
+// 4 - Crie uma função que receba um array de nomes e retorne o nome com a maior quantidade de caracteres. 
 
 
 
