@@ -109,6 +109,19 @@ function somaDosNumeros(numeros) {
   console.log(somaDosNumeros(5));
 
 
-// 7 - Crie uma função que receba uma ovo ovo e outra ovo ending . Verifique se a ovo ending é o final da ovo ovo . Considere que a ovo ending sempre será menor que a ovo ovo . 
+// 7 - Crie uma função que receba uma string word e outra string ending . Verifique se a string ending é o final da string word . Considere que a string ending sempre será menor que a string word .
 
-
+function checkWordEnding(word, wordEnding) {
+    word = word.split('');
+    wordEnding = wordEnding.split('');
+    control = true;
+    for (let index = 0; index < wordEnding.length; index += 1) {
+      if (word[word.length - wordEnding.length + index] != wordEnding[index]) {
+        control = false;
+      }
+    }
+    return control;
+}
+     
+console.log(checkWordEnding('trybe', 'be'));
+console.log(checkWordEnding('joaofernando', 'fernan'));
