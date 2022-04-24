@@ -10,20 +10,17 @@ for (let index = 0; index < urgenteTopo.length; index += 1) {
 }
 
 const naoUrgente = document.querySelector('.no-emergency-tasks');
-naoUrgente.style.backgroundColor = 'rgb(255, 159, 132)';
+naoUrgente.style.backgroundColor = 'rgb(20, 255, 255)';
 
 const naoUrgenteTopo = document.querySelectorAll('.no-emergency-tasks h3');
 for (let index = 0; index < naoUrgenteTopo.length; index += 1) {
   naoUrgenteTopo[index].style.backgroundColor = 'blue';
 }
 
-const footer = document.getElementById('footer-container');
-footer.style.backgroundColor = 'rgb(0, 53, 51)';
+const footer = document.querySelector('#footer-container');
+footer.style.backgroundColor = 'green';
 
 
 
 
 
-//'rgb(255, 159, 132)';
-
-//'rgb(249, 219, 94)';
