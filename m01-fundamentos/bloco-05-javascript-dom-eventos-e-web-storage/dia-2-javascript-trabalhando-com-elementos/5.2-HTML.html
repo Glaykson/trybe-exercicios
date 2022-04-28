@@ -57,7 +57,97 @@
   </head>
   <body>
     <script>
-      // COLOQUE SEU CÓDIGO AQUI
+    const body = document.body;
+
+//  1 - Adicione a tag h1 com o texto Exercício 5.2 - JavaScript DOM como filho da tag body;
+
+    const tagH1 = document.createElement('h1')
+    tagH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+    body.appendChild(tagH1);
+
+
+ // 2 - Adicione a tag main com a classe main-content como filho da tag body;
+
+    const tagMain = document.createElement('main')
+    tagMain.className = 'main-content'
+    body.appendChild(tagMain);
+
+
+//  3 - Adicione a tag section com a classe center-content como filho da tag main criada no passo 2;
+
+    const tagSection = document.createElement('section')
+    tagSection.className = 'center-content'
+    tagMain.appendChild(tagSection);
+    
+    
+//  4 - Adicione a tag p como filho do section criado no passo 3 e coloque algum texto;
+
+    const tagP = document.createElement('p')
+    tagP.innerHTML = 'Vamos praticar fazendo todo o exercício 5.2'
+    tagSection.appendChild(tagP);
+
+
+//  5 - Adicione a tag section com a classe left-content como filho da tag main criada no passo 2;
+
+    const tagSection2 = document.createElement('section')
+    tagSection2.className = 'left-content'
+    tagMain.appendChild(tagSection2);
+
+
+//  6 - Adicione a tag section com a classe right-content como filho da tag main criada no passo 2;
+
+    const tagSection3 = document.createElement('section')
+    tagSection3.className = 'right-content'
+    tagMain.appendChild(tagSection3);
+
+
+//  7 - Adicione uma imagem com src configurado para o valor https://picsum.photos/200 e classe small-image . Esse elemento deve ser filho do section criado no passo 5;
+
+    const imagem = document.createElement('img')
+    imagem.className = 'small-image'
+    imagem.src = 'https://picsum.photos/200'
+    tagSection2.appendChild(imagem);
+
+
+//  8 - Adicione uma lista não ordenada com os valores de 1 a 10 por extenso, ou seja, um , dois , três , ... como valores da lista. Essa lista deve ser filha do section criado no passo 6;
+
+    const tagUl = document.createElement('ul')
+    tagSection3.appendChild(tagUl);
+
+    const valoresLista = ['Um, Dois, Três, Quatro, Cinco, Seis, Sete, Oito, Nove, Dez'];
+
+      for (let num in valoresLista) {
+        const intensDaLista = document.createElement('li');
+        intensDaLista.innerHTML = valoresLista[num];
+
+        tagUl.appendChild(intensDaLista);
+      }
+    
+
+//  9 - Adicione 3 tags h3 , todas sendo filhas do main criado no passo 2.
+      
+  /*   for (let index = 1, index <= 3, index += 1) {
+      const tagH3 = document.createElement('h3');
+      tagH3.innerHTML = 'Legal' + index;
+      tagMain.appendChild(tagH3);    
+    } */
+    
+
+
+/*     const tagH3A = document.createElement('h3')
+    tagH3A.innerText = 'Exercício 5.2 - 9.1'
+    tagMain.appendChild(tagH3A);
+
+    const tagH3B = document.createElement('h3')
+    tagH3B.innerText = 'Exercício 5.2 - 9.2'
+    tagMain.appendChild(tagH3B);
+
+    const tagH3C = document.createElement('h3')
+    tagH3C.innerText = 'Exercício 5.2 - 9.3'
+    tagMain.appendChild(tagH3C);
+ */
+
+
     </script>
   </body>
 </html>
