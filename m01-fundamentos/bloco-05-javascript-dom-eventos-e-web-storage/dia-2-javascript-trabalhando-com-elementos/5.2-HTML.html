@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+
+    const body = document.body;
+
+//..................... Parte 1 .....................
+
+//  Exercício 1
+
+    const tagH1 = document.createElement('h1')
+    tagH1.innerText = 'Exercício 5.2 - JavaScript DOM'
+    body.appendChild(tagH1);
+
+
+ // Exercício 2
+
+    const tagMain = document.createElement('main')
+    tagMain.className = 'main-content'
+    body.appendChild(tagMain);
+
+
+//  Exercício 3 
+
+    const tagSectionC = document.createElement('section')
+    tagSectionC.className = 'center-content'
+    tagMain.appendChild(tagSectionC);
+    
+    
+//  Exercício 4 
+
+    const tagP = document.createElement('p')
+    tagP.innerHTML = 'Vamos praticar fazendo todo o exercício 5.2'
+    tagSectionC.appendChild(tagP);
+
+
+//  Exercício 5
+
+    const tagSectionL = document.createElement('section')
+    tagSectionL.className = 'left-content'
+    tagMain.appendChild(tagSectionL);
+
+
+//  Exercício 6
+
+    const tagSectionR = document.createElement('section')
+    tagSectionR.className = 'right-content'
+    tagMain.appendChild(tagSectionR);
+
+
+//  Exercício 7
+
+    const imagem = document.createElement('img')
+    imagem.className = 'small-image'
+    imagem.src = 'https://picsum.photos/200'
+    tagSectionL.appendChild(imagem);
+
+
+//  Exercício 8
+
+    const tagUl = document.createElement('ul')
+    tagSectionR.appendChild(tagUl);
+
+    const itensLista = ['Um', 'Três', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez'];
+
+      for (let num in itensLista) {
+        const tagLi = document.createElement('li');
+        tagLi.innerHTML = itensLista[num];
+        tagLi.className = 'itens-da-lista'
+        tagUl.appendChild(tagLi);
+      }
+    
+
+//  Exercício 9
+      
+    for (let index = 1; index <= 3; index += 1) {
+      const tagH3 = document.createElement('h3');
+      tagH3.innerHTML = 'Exercício 5.2 - 9.' + index;
+      tagMain.appendChild(tagH3);    
+    }
+    
+    
+//..................... Parte 2 .....................
+
+
+//  Exercício 1
+
+    const tagH1Title = document.querySelector('h1')
+    tagH1Title.className = 'title';
+
+  
+//  Exercício 2
+
+    const classDescription = document.getElementsByTagName('h3')
+      for (index = 0; index < classDescription.length; index += 1) {
+      classDescription[index].className = 'description'
+    }
+    
+
+//  Exercício 3
+
+    const removeSectionL = document.getElementsByClassName('left-content')[0];
+    tagMain.removeChild(removeSectionL);
+
+
+//  Exercício 4 
+
+const centerSectionR = document.getElementsByClassName('right-content')[0]
+    centerSectionR.style.marginRight = 'auto';
+
+
+//  Exercício 5 
+
+    const greenTagSectionR = document.getElementsByClassName('center-content')[0]
+    greenTagSectionR.parentNode.style.backgroundColor = 'green'
+
+
+//  Exercício 6 
+    
+    const removerItensLista = document.querySelectorAll('.itens-da-lista');
+        
+    for (index = 0; index < removerItensLista.length; index += 1) {
+      let itens = removerItensLista[index];
+      
+      if (itens.innerText.includes('Nove')) {
+        tagUl.removeChild(itens) 
+      } else if (itens.innerText.includes('Dez')) {
+        tagUl.removeChild(itens) 
+      }
+    }
+    
+    </script>
+  </body>
+</html>
