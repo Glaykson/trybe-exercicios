@@ -100,3 +100,24 @@ function criarBotaoSexta(sexta) {
 
 //................................. Exercício 5 .................................   
 
+function diasDeSexta(arraySextas) {
+    let buscarBotaoSexta = document.querySelector('#btn-friday');
+    let sextas = document.getElementsByClassName('friday');
+    let novoTextoSexta = 'Sextou!';
+  
+    buscarBotaoSexta.addEventListener('click', function() {
+    for (let index = 0; index < sextas.length; index += 1) {
+      if (sextas[index].innerHTML !== novoTextoSexta) {
+          sextas[index].innerHTML = novoTextoSexta;
+      } else {
+          sextas[index].innerHTML = arraySextas[index];
+        }
+      }
+    })
+  };
+  
+  let sextasDeDezembro = [ 4, 11, 18, 25 ];
+  diasDeSexta(sextasDeDezembro);
+
+
+//................................. Exercício 6 .................................   
