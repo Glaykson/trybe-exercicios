@@ -121,3 +121,28 @@ function diasDeSexta(arraySextas) {
 
 
 //................................. Exercício 6 .................................   
+
+function mouseNoDia() {
+    let dias = document.querySelector('#days');
+  
+    dias.addEventListener('mouseover', function(event) {
+      event.target.style.fontSize = '30px';
+      event.target.style.fontWeight = '600';
+    })
+  };
+  
+  function tirarMouse() {
+    let dias = document.querySelector('#days');
+  
+    dias.addEventListener('mouseout', function(event) {
+      event.target.style.fontWeight = '200';
+      event.target.style.fontSize = '20px';
+    })
+  };
+  
+  mouseNoDia();
+  tirarMouse();
+
+
+//................................. Exercício 7 .................................   
+
