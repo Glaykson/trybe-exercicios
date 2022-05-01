@@ -47,4 +47,21 @@ function createDaysOfTheWeek() {
 
   criarDiasDoMes();
 
-  
+
+//................................. Exercício 2 .................................   
+
+function criarBotaoFeriados(nomeDoBotao) {
+  let buttonsContainer = document.querySelector('.buttons-container');
+  let novoBotao = document.createElement('button');
+  let idBotao = "btn-holiday" 
+  novoBotao.innerHTML = nomeDoBotao;
+  novoBotao.id = idBotao;
+  buttonsContainer.appendChild(novoBotao); 
+}
+
+criarBotaoFeriados('Feriados')
+
+
+//................................. Exercício 3 .................................   
+
+
