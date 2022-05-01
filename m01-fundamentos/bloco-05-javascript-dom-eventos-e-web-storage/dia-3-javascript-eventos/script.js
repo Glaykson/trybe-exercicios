@@ -65,3 +65,29 @@ criarBotaoFeriados('Feriados')
 //................................. Exercício 3 .................................   
 
 
+function diasFeriados() {
+  let botaoFeriados = document.querySelector('#btn-holiday');
+  let feriados = document.querySelectorAll('.holiday')
+  let corInicial = 'rgb(238,238,238)';
+  let novaCor = 'rgb(218, 170, 154)';
+  //let novaCor = 'white';
+  
+  botaoFeriados.addEventListener('click', function() {
+    for (let index = 0; index < feriados.length; index += 1) {
+      if (feriados[index].style.backgroundColor === novaCor) {
+        feriados[index].style.backgroundColor = corInicial;
+      } else {
+        feriados[index].style.backgroundColor = novaCor;
+      }
+    }
+  })
+};
+  
+  diasFeriados();
+
+
+//................................. Exercício 4 .................................   
+
+
+
+
