@@ -146,3 +146,16 @@ function mouseNoDia() {
 
 //................................. Exercício 7 .................................   
 
+function novaTarefa(texto) {
+
+    let minhasTarefas = document.querySelector('.my-tasks');
+    let tarefa = document.createElement('span');
+  
+    tarefa.innerHTML = texto;
+    minhasTarefas.appendChild(tarefa);
+  };
+  
+  novaTarefa('Projeto Pixels Art');
+
+//................................. Exercício 7 .................................   
+
