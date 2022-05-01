@@ -157,5 +157,20 @@ function novaTarefa(texto) {
   
   novaTarefa('Projeto Pixels Art');
 
-//................................. Exercício 7 .................................   
+//................................. Exercício 8 .................................   
+
+function novaCorTarefa(color) {
+
+  let minhaTarefa = document.querySelector('.my-tasks');
+  let novaTarefa = document.createElement('div');
+
+  novaTarefa.className = 'task';
+  novaTarefa.style.backgroundColor = color;
+  minhaTarefa.appendChild(novaTarefa);
+};
+
+novaCorTarefa('green');
+
+    
+//................................. Exercício 9 .................................   
 
