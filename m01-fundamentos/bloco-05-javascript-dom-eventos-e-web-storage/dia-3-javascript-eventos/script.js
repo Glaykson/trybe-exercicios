@@ -192,5 +192,22 @@ function classeTarefa() {
 
 //................................. Exercício 10 .................................   
 
+function corDoDia() {
+  let clicarTarefa = document.getElementsByClassName('task selected');
+  let dias = document.querySelector('#days');
+  let maisTarefa = document.querySelector('.task');
+  let corTarefa = maisTarefa.style.backgroundColor;
+  
+  dias.addEventListener('click', function(event){
+    let eventTargetColor = event.target.style.color;
+    if (clicarTarefa.length > 0 && eventTargetColor !== corTarefa) {
+      let color = clicarTarefa[0].style.backgroundColor;
+      event.target.style.color = color;
+    } else if (eventTargetColor === corTarefa && clicarTarefa.length !== 0) {
+      event.target.style.color = 'rgb(119,1b19,119)';
+    }
+  });
+};
 
+corDoDia();
 
