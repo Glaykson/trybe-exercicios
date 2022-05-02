@@ -211,3 +211,35 @@ function corDoDia() {
 
 corDoDia();
 
+//................................. Bônus .................................   
+
+function adNovaTarefa() {
+  let chamarEntrada = document.querySelector('#task-input');
+  let adBotaoEntrada = document.querySelector('#btn-add');
+  let chamarListaTarefas = document.querySelector('.task-list');
+
+  adBotaoEntrada.addEventListener('click', function() {
+    if (chamarEntrada.value.length > 0) {
+      let novaLista = document.createElement('li');
+      novaLista.innerText = chamarEntrada.value;
+
+      chamarListaTarefas.appendChild(novaLista);
+      chamarEntrada.value = '';
+    } else {
+      alert('Error: Digite ao menos 1 caractere.');
+    }
+  })
+
+  chamarEntrada.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter' && chamarEntrada.value.length > 0) {
+      let novaLista = document.createElement('li');
+      novaLista.innerText = chamarEntrada.value;
+     
+      chamarListaTarefas.appendChild(novaLista);
+      chamarEntrada.value = '';
+    }
+  });
+};
+
+adNovaTarefa();
+
