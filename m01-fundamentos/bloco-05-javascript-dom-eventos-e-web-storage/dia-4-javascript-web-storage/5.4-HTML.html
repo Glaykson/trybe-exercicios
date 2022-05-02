@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Leitor</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="preferences">
+    <section id="background-color" class="options">
+      <span>Cor de fundo</span>
+      <button>white</button>
+      <button>black</button>
+      <button>green</button>
+      <button>blue</button>
+      <button>yellow</button>
+    </section>
+    <section id="font-color" class="options">
+      <span>Cor da fonte</span>
+      <button>black</button>
+      <button>red</button>
+      <button>white</button>
+    </section>
+    <section id="font-size" class="options">
+      <span>Tamanho da fonte</span>
+      <button>8pt</button>
+      <button>10pt</button>
+      <button>12pt</button>
+      <button>14pt</button>
+      <button>20pt</button>
+    </section>
+    <section id="line-height" class="options">
+      <span>Espaçamento entre as linhas</span>
+      <button>1</button>
+      <button>normal</button>
+      <button>1.5</button>
+      <button>2.0</button>
+      <button>3.0</button>
+    </section>
+    <section id="font-family" class="options">
+      <span>Tipo da fonte</span>
+      <button>Arial</button>
+      <button>Times New Roman</button>
+    </section>
+  </section>
+  <main>
+    <section class="title">
+      <h1>JavaScript - Web Storage</h1>
+    </section>
+    <section class="description">
+      <h3>O que vamos aprender?</h3>
+    </section>
+    <article class="content">
+      <p class="paragraph">
+        Você aprenderá sobre Web Storage . Web Storage provê mecanismos para que as aplicações web possam salvar dados nos browsers das pessoas.
+        Antes do HTML 5 , as aplicações tinham que salvar os dados locais em cookies, que eram enviados para o servidor a cada requisição do browser . Web Storage é mais seguro e tem a capacidade de salvar uma quantidade maior de dados sem afetar o desempenho da página.
+        Ao contrário dos Cookies , o limite de armazenamento é muito maior (pelo menos 5MB), e as informações não são transferidas para o servidor durante as requisições.
+        Web Storage é por origem (por domínio e protocolo). Todas as páginas de uma origem podem salvar e acessar os mesmos dados. Por exemplo, se o domínio betrybe.com salva o dado X no Web Storage , o domínio course.betrybe.com consegue ler esse dado X.
+      </p>
+      <section class="description">
+        <h3>Por que isso é importante?</h3>
+      </section>
+      <p class="paragraph">
+        Salvar dados no browser das pessoas que acessam uma determinada página web é muito útil, pois podemos fazer com que essa página consuma esses dados e apresente diferentes conteúdos e ações para diferentes pessoas.
+        Quando você inicia um vídeo no YouTube e depois retorna, o vídeo continua de onde parou. Um carrinho de compras de um site permanece com os itens que você adicionou durante semanas e uma página é apresentada já com o seu nome, e você nem fez login.
+        Esses são exemplos de aplicações que utilizam o browser para salvar esses dados e facilitar a criação de tais funcionalidades.
+        Esse armazenamento local é o conteúdo de hoje, Web Storage.
+      </p>
+    </article>
+  </main>  
+</body>
+<script src="script.js"></script>
+</html>
