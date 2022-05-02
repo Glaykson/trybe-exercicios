@@ -19,8 +19,3 @@ for (let index = 0; index < naoUrgenteTopo.length; index += 1) {
 
 const footer = document.querySelector('#footer-container');
 footer.style.backgroundColor = 'green';
-
-
-
-
-
