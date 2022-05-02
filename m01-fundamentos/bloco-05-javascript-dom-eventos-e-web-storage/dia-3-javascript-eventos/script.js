@@ -174,3 +174,23 @@ novaCorTarefa('green');
     
 //................................. Exercício 9 .................................   
 
+function classeTarefa() {
+    let clicarTarefa = document.getElementsByClassName('task selected');
+    let umaTarefa = document.querySelector('.task');
+  
+    umaTarefa.addEventListener('click', function(event) {
+      if (clicarTarefa.length === 0) {
+        event.target.className = 'task selected';
+      } else {
+        event.target.className = 'task';
+      }
+    });
+  };
+  
+  classeTarefa();
+
+
+//................................. Exercício 10 .................................   
+
+
+
