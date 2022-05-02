@@ -1,11 +1,12 @@
 window.onload = function() {
-    function setBackgroundColor(color) {
+    
+    function corDeFundo(color) {
       let content = document.querySelector(".content")
       content.style.backgroundColor = color
       localStorage.setItem("backgroundColor", color)
     }
 
-    function setFontColor(color) {
+    function corFonte(color) {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.color = color
@@ -13,7 +14,7 @@ window.onload = function() {
       localStorage.setItem("fontColor", color)
     }
 
-    function setFontSize(size) {
+    function tamanhoDaFonte(size) {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.fontSize = size
@@ -21,7 +22,7 @@ window.onload = function() {
       localStorage.setItem("fontSize", size)
     }
 
-    function setLineHeight(height) {
+    function alturaDaLinha(height) {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.lineHeight = height
@@ -29,7 +30,7 @@ window.onload = function() {
       localStorage.setItem("lineHeight", height)
     }
 
-    function setFontFamily(family) {
+    function familiaDeFontes(family) {
       let paragraphs = document.querySelectorAll(".paragraph")
       for (let index = 0; index < paragraphs.length; index += 1) {
         paragraphs[index].style.fontFamily = family
@@ -37,62 +38,69 @@ window.onload = function() {
       localStorage.setItem("fontFamily", family)
     }
 
-    // background-color
+ //.................. Cor de Fundo ...................
+
     let backgroundColorButtons = document.querySelectorAll("#background-color>button")
     for (let index = 0; index < backgroundColorButtons.length; index += 1) {
       backgroundColorButtons[index].addEventListener("click", function(event) {
-        setBackgroundColor(event.target.innerHTML)
+        corDeFundo(event.target.innerHTML)
       })
     }
 
-    // font-color
+ //.................. Cor da Fonte ...................
+    
     let fontColorButtons = document.querySelectorAll("#font-color>button")
     for (let index = 0; index < fontColorButtons.length; index += 1) {
       fontColorButtons[index].addEventListener("click", function(event) {
-        setFontColor(event.target.innerHTML)
+        corFonte(event.target.innerHTML)
       })
     }
 
-    // font-size
+ //.................. Tamaho da Fonte ...................
+
     let fontSizeButtons = document.querySelectorAll("#font-size>button")
     for (let index = 0; index < fontSizeButtons.length; index += 1) {
       fontSizeButtons[index].addEventListener("click", function(event) {
-        setFontSize(event.target.innerHTML)
+        tamanhoDaFonte(event.target.innerHTML)
       })
     }
 
-    // line-height
+ //.................. Altura da Linha ...................
+
     let lineHeightButtons = document.querySelectorAll("#line-height>button")
     for (let index = 0; index < lineHeightButtons.length; index += 1) {
       lineHeightButtons[index].addEventListener("click", function(event) {
-        setLineHeight(event.target.innerHTML)
+        alturaDaLinha(event.target.innerHTML)
       })
     }
 
-    // font-family
+ 
+ //.................. Família de Fontes ...................
+
     let fontFamilyButtons = document.querySelectorAll("#font-family>button")
     for (let index = 0; index < fontFamilyButtons.length; index += 1) {
       fontFamilyButtons[index].addEventListener("click", function(event) {
-        setFontFamily(event.target.innerHTML)
+        familiaDeFontes(event.target.innerHTML)
       })
     }
 
-    function initialize() {
+    function inicializar() {
       let backgroundColor = localStorage.getItem("backgroundColor")
-      if (backgroundColor) setBackgroundColor(backgroundColor)
+      if (backgroundColor) corDeFundo(backgroundColor)
 
       let fontColor = localStorage.getItem("fontColor")
-      if (fontColor) setFontColor(fontColor)
+      if (fontColor) corFonte(fontColor)
 
       let fontSize = localStorage.getItem("fontSize")
-      if (fontSize) setFontSize(fontSize)
+      if (fontSize) tamanhoDaFonte(fontSize)
 
       let lineHeight = localStorage.getItem("lineHeight")
-      if (lineHeight) setLineHeight(lineHeight)
+      if (lineHeight) alturaDaLinha(lineHeight)
 
       let fontFamily = localStorage.getItem("fontFamily")
-      if (fontFamily) setFontFamily(fontFamily)
+      if (fontFamily) familiaDeFontes(fontFamily)
     }
 
-    initialize()
+    inicializar()
   }
+
