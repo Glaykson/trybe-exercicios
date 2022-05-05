@@ -7,6 +7,8 @@
 
 .header-img {
   width: 70px;
+  display: flex;
+  justify-content: center;
 }
 
 .gallery-img {
@@ -17,3 +19,23 @@
   width: 25px;
   margin-left: 10px;
 }
+
+.box-container {  
+  background-color: #323433;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.cabeçalho {
+  color: white;
+}
+
+.p {
+  display: flex;
+  justify-content: center;
+}
+
+
+
+
