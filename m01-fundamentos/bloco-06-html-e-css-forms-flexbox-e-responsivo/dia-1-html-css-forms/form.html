@@ -7,6 +7,38 @@
     <title>Formulário TrybeTrip</title>
 </head>
 <body>
-    
+  <h1>TrybeTrip</h1>
+  <form action="" method="GET" enctype="multipart/form-data">
+    <label for="nome-completo">Nome Completo:
+      <input type="text" name="nome" id="nome-completo" placeholder="Digite seu nome" required>
+    </label><br><br>
+    <label for="input-email">E-mail:
+        <input type="email" name="email" id="input-email" placeholder="Digite seu nome" required>
+    </label>
+    <p>Destino Preferido:</p>
+    <label for="destino-01">
+      <input type="radio" name="destino-preferido" id="destino-01">Cidade
+    </label>
+    <label for="destino-02">
+      <input type="radio" name="destino-preferido" id="destino-02">Campo
+    </label>
+    <label for="destino-03">
+      <input type="radio" name="destino-preferido" id="destino-03">Praia
+    </label>
+    <label for="destino-04">
+      <input type="radio" name="destino-preferido" id="destino-04">Montanhas
+    </label>
+    <p>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</p>
+    <textarea name="porque-eu" id="textarea-01" cols="500" rows="10"></textarea>
+    <label for="melhor-data">Qual a melhor data para realizar sua viagem? 
+      <input type="date" name="data" id="melhor-data" placeholder="dd/mm/aaaa" required>
+    </label>
+    <label for="oportunidades">
+      <input type="checkbox" name="noticias" id="oportunidades">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?     
+    </label>
+    <label for="concordo">
+      <input type="checkbox" name="imagens" id="concordo">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.     
+    </label>
+  </form>
 </body>
 </html>
