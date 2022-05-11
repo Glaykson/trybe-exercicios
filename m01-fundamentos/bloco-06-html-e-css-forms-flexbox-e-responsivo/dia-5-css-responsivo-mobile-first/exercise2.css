@@ -6,3 +6,56 @@ html {
     box-sizing: inherit;
   }
   
+   
+  .container {
+    display: flex;
+  }
+  
+  p {
+    padding: 20px;
+  }
+  
+    
+  /* Breakpoint 1*/
+  
+  @media screen and (max-width: 600px) {
+    body {
+      font-family: sans-serif;
+      background-color: rgb(245, 228, 144);      
+    }
+    
+    .container {
+      flex-direction: column;
+    }
+  
+    p {
+      line-height: 1.5em;
+      padding: 0 5px;      
+    }    
+  }
+  
+  
+  /* Breakpoint 2*/
+  
+  @media screen and (min-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  
+    .container {
+      flex-wrap: wrap;
+    }    
+  }
+  
+  /* Breakpoint 3*/
+  
+  @media screen and (min-width: 1000px) {
+    body {
+      background-color: lightgreen;
+    }
+  
+    .container {
+      flex-wrap: nowrap;
+    }    
+  }
+  
