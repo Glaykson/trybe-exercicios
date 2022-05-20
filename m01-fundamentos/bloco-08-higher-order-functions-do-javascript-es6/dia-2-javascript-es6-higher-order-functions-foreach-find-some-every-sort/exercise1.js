@@ -71,6 +71,6 @@ const books = [
 //   return books.find((livro) => livro.author.birthYear === 1947).author.name;
 // }
 
-const authorBornIn1947 = () => books.find((livro) => livro.author.birthYear === 1947).author.name;
+const authorBornIn1947 = () => books.find((livro) => livro.author.birthYear === 1947);
 
 console.log(authorBornIn1947());
