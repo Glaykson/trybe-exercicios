@@ -31,3 +31,5 @@ console.log(planetDistanceFromSun(mars)); // A
 setTimeout(() => console.log(planetDistanceFromSun(venus)), 3000); // B
 setTimeout(() => console.log(planetDistanceFromSun(jupiter)), 2000); // C
 
+// Resposta:
+// A ordem de finalização de execução das linhas comentadas é: A, C e B.

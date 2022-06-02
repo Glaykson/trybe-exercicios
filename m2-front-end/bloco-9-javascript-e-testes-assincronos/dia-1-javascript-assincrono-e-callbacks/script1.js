@@ -1,8 +1,6 @@
 
 // 1 - Dado o código abaixo, qual a ordem de finalização de execução das linhas comentadas?
 
-//    planetDistanceFromSun = ({ nome, distanciaDoSol: { valor, unidadeDeMedida } }) => `${nome} está ${valor} ${unidadeDeMedida} de distância do sol`;
-
 const planetDistanceFromSun = ({ name, distanceFromSun: { value, measurementUnit } }) =>
 `${name} is ${value} ${measurementUnit} apart from the Sun`;
 
@@ -34,6 +32,8 @@ console.log(planetDistanceFromSun(mars)); // A
 console.log(planetDistanceFromSun(venus)); // B
 console.log(planetDistanceFromSun(jupiter)); // C
 
+// Resposta:
+// A ordem de finalização de execução das linhas comentadas é: A, B e C.
 
 // Tradução:
 // planetDistanceFromSun: planetaDistanciaDoSol
