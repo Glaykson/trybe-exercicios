@@ -16,6 +16,25 @@ const greet = (temperature) =>
   console.log(`Hi there! Curiosity here. Right now is ${temperature}ºC at Mars`);
 
 // definição da função sendMarsTemperature...
+const sendMarsTemperature = (saudar) => {
+  const currentTemperature = getMarsTemperature();
+  setTimeout(() => saudar(currentTemperature), messageDelay());
+};
 
-sendMarsTemperature(temperatureInFahrenheit); // imprime "It is currently 47ºF at Mars", por exemplo
-sendMarsTemperature(greet); // imprime "Hi there! Curiosity here. Right now is 53ºC at Mars", por exemplo
+sendMarsTemperature(temperatureInFahrenheit);
+sendMarsTemperature(greet);
+
+// .......................................................
+
+// Tradução
+// messageDelay: Atraso da mensagem
+// getMarsTemperature: obter a temperatura de Marte
+// maxTemperature: Temperatura máxima
+// sendMarsTemperature: enviar temperatura de Marte
+
+// toFahrenheit: para Fahrenheit
+// degreeCelsius: graus Celsius
+// temperatureInFahrenheit: temperatura em Fahrenheit
+// It is currently ${toFahrenheit(temperature)}ºF at Mars: Atualmente está ${toFahrenheit(temperature)}ºF em Marte
+// greet: saudar
+// Hi there! Curiosity here. Right now is ${temperature}ºC at Mars: Olá! Curiosidade aqui. Agora é ${temperature}ºC em Marte
