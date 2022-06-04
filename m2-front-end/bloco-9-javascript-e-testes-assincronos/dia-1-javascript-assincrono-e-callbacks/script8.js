@@ -33,7 +33,16 @@ const pokemons = [
     }, 2000);
   }
   
-  getPokemonDetails();
+  getPokemonDetails(
+    (pokemon) => pokemon.name === 'Squirtle',
+    (erro, mensagem) => {
+      if (erro) {
+        console.log(erro);
+      } else {
+        console.log(mensagem);
+      }
+    }
+  );
   
   module.exports = {
     getPokemonDetails,
