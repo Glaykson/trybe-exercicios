@@ -1,7 +1,7 @@
 
 // ................... Exercício 1 ...................
 
-const gerarFuncionario = (nomeCompleto) => {
+/* const gerarFuncionario = (nomeCompleto) => {
   const email = nomeCompleto.toLowerCase().split(' ').join('_');
   return { nomeCompleto, email: `${email}@trybe.com` };
 }
@@ -17,7 +17,6 @@ const novoFuncionario = (callback) => {
   
   console.log(novoFuncionario(gerarFuncionario));
 
-
 // ................... Exercício 2 ...................
 
 const verificaNum = (meuNum, num) => meuNum === num;
@@ -26,8 +25,7 @@ const numSorteado = (meuNum, verifica) => {
   return verifica(meuNum, num) ? 'Parabéns você ganhou!' : 'Tente novamente';
 };
 console.log(numSorteado(3, verificaNum));
-
-
+ */
 // ................... Exercício 3 ...................
 
 const RIGHT_ANSWERS = ['A', 'C', 'B', 'D', 'A', 'A', 'D', 'A', 'D', 'C'];
@@ -51,3 +49,4 @@ const contaPontos = (respostasCorretas, respostasDoEstudante, compara) => {
 };
 
 console.log(contaPontos(RIGHT_ANSWERS, STUDENT_ANSWERS, comparaRespostas));
+
